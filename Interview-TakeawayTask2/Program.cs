@@ -10,6 +10,8 @@ namespace InterviewTakeawayTask2
             CreateHostBuilder(args).Build().Run();
         }
 
+
+        ///Middleware being called in startup.cs. Looks like it just setting up swagger, enabling/mapping routing and controllers, and setting up a singleton service.
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
